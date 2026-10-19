@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de Clima de Peru</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>CLIMA PERU</h1>
+    <p>Esta es una pagina de consultas de clima a tiempo real de las ciudades del peru</p>
+  </header>
+
+  <main>
+    <section class="buscador">
+
+      <select id="selectorCiudad">
+        <option value="lima">Lima</option>
+        <option value="arequipa">Arequipa</option>
+        <option value="trujillo">Trujillo</option>
+        <option value="piura">Piura</option>
+        <option value="cusco">Cusco</option>
+        <option value="puno">Puno</option>
+        <option value="iquitos">Iquitos</option>
+        <option value="huancayo">Huancayo</option>
+      </select>
+
+      <button id="btnConsultar">Ver clima</button>
+
+    </section>
+
+    <p id="mensajeError" class="error" ></p>
+
+    <!-- Sección donde se inyectará la tarjeta de resultados.
+         Dale id="resultado"                               -->
+    <section id="resultado" ></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
